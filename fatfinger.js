@@ -2,18 +2,22 @@ var input = [];
 var output = [];
 function firstFunction(){
   input.push(1);
+  setTimeout(function(){submitFunction();}, 1000);
+
   
 }
 function secondFunction(){
   input.push(2);
-  
+  setTimeout(function(){submitFunction();}, 1000);
 }
 function thirdFunction(){
   input.push(3);
+  setTimeout(function(){submitFunction();}, 1000);
   
 }
 function forthFunction(){
   input.push(4);
+  setTimeout(function(){submitFunction();}, 1000);
   
 }
 function submitFunction() {

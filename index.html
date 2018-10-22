@@ -13,22 +13,29 @@
 	<!-- Latest compiled JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body class="well" background="images/container.jpg">
 	<div class="container">
-		<h1>Tiny keyboard & fat finger</h1>
-	<img src="instruction.png">
-	<br>
-	<p id="demo"></p>
-	<br>
-    <button type="button" class="btn btn-default" onclick="firstFunction()" >button1</button>
-    <button type="button" class="btn btn-default" onclick="secondFunction()">button2</button>
-    <br>
-    <button type="button" class="btn btn-default" onclick="thirdFunction()">button3</button>
-    <button type="button" class="btn btn-default" onclick="forthFunction()">button4</button>
-    <!-- <button onclick="submitFunction()">button5</button> -->
-    <button onclick="submitFunction()" type="button" class="btn btn-danger btn-circle"><i class="fa fa-heart"></i>
-                            </button>
-    
+		<h1 id="header">Tiny keyboard & fat finger</h1>
+		<div class="row">
+	      <div class="column">
+	      	<div class="solid">
+	      	  <p id="demo"></p>
+	      	</div>
+			<br>
+		    <button type="button" class="btn btn-default btn-modify" onclick="firstFunction()" >button1</button>
+		    <button type="button" class="btn btn-default  btn-modify" onclick="secondFunction()">button2</button>
+		    <br>
+		    <button type="button" class="btn btn-default  btn-modify" onclick="thirdFunction()">button3</button>
+		    <button type="button" class="btn btn-default  btn-modify" onclick="forthFunction()">button4</button>
+		    <!-- <button onclick="submitFunction()">button5</button> -->
+		   <!--  <button onclick="submitFunction()" type="button" class="btn btn-danger btn-circle"><i class="fa fa-heart"></i></button> -->
+	      </div>
+	      <div class="column">
+	      	<img id="image" src="instruction.png">
+	      </div>
+        </div>
+	
+	
 		
 	</div>
 	 <script type="text/javascript" src="fatfinger.js"></script>
